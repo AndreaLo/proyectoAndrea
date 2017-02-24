@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'CategoriaController@getNovedades');
+/*Route::get('auth/login', 'CategoriaController@getHome');
+Route::get('logout', 'CategoriaController.php@getHome');*/
+Route::get('categorias', 'CategoriaController@getCategorias');
+Route::get('categorias/{id_categoria}', 'CategoriaController@getProductoPorCatgoria');
+Route::get('producto/{id}', 'CategoriaController@getFicha');
+Route::get('aboutus', 'CategoriaController@getAboutus');
