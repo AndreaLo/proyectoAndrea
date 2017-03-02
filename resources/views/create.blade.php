@@ -9,12 +9,11 @@
             <h3 class="text-center">
                 Crear producto
             </h3>
-            <form action="{{ url('aboutus') }}" method="GET">
-                {{ csrf_field() }}
+            <form action="{{ url('aboutus') }}" method="POST">
             <div class="form-group">
                 {{method_field('PUT')}}
-                <label for="idcategoria">Categoria</label>
-                <input type="number" name="idcategoria" id="idcategoria" max="8" min="1" class="form-control">
+                <label for="categoria">Categoria</label>
+                <input type="number" name="categoria" id="categoria" max="8" min="1" class="form-control">
             </div>
 
             <div class="form-group">
@@ -32,12 +31,18 @@
                 <input type="text" name="descripcion" id="descripcion" class="form-control">
             </div>
 
+            <div class="form-group">
+                <label for="synopsis">Resumen</label>
+                <textarea name="synopsis" id="synopsis" class="form-control" rows="3">{{$peli->synopsis}}</textarea>
+            </div>
+
             <div class="form-group text-center">
                 <button type="submit" class="btn btn-info" style="padding:8px 100px;margin-top:25px;">
-                    Crear
+                    Modificar ficha
                 </button>
             </div>
             </form>
+
         </div>
     </div>
 @stop

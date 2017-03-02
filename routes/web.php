@@ -17,4 +17,4 @@ Route::get('logout', 'CategoriaController.php@getHome');*/
 Route::get('categorias', 'CategoriaController@getCategorias');
 Route::get('categorias/{id_categoria}', 'CategoriaController@getProductoPorCatgoria');
 Route::get('producto/{id}', 'CategoriaController@getFicha');
-Route::get('aboutus', 'CategoriaController@getAboutus');
+Route::get('aboutus', 'CategoriaController@crearProd');
