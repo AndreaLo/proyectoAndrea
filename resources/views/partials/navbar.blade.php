@@ -26,7 +26,7 @@
                 <li{{ Request::is('/aboutus') ? ' class=active' : ''}}>
                     <a href="{{url('/aboutus')}}">
                         <span  aria-hidden="true"></span>
-                        About us
+                        Crear artículo
                     </a>
                 </li>
             </ul>
